@@ -8,7 +8,7 @@ module.exports = function($gulp) {
 
   $gulp.task('async', function(done) {
     $gulp
-      .src('node_modules/async/dist/async.js')
+      .src('./node_modules/async/dist/async.js')
       .pipe($gulp.dist('vendor'))
       .pipe(sourcemaps.init())
       .pipe(uglify())
